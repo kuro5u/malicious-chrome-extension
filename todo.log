@@ -1,9 +1,12 @@
--Add support for more sites
--Use more generic methods to find elements
--Find email, username or phone number element
--Handle 2-step logins
--Better regex rules
+-Match login/submit button element
+-Add support for Twitter
+-2-step logins (solved?)
+-Handle errors
 
 Bonus - IRL applications:
 -Embed in another extension
 -Send logged credentials to attacker along with other useful info (e.g. IP, User-Agent, etc)
+-Support more sites
+
+-1 page report
+-Presentation
