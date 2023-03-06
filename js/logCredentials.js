@@ -5,13 +5,9 @@ const button = document.querySelector('#loginbutton');
 
 // Create input event listeners
 inputElement1.addEventListener('input', () => {
-  const enteredText1 = event.target.value;
-  //console.log(enteredText1);
 });
 
 inputElement2.addEventListener('input', () => {
-  const enteredText2 = event.target.value;
-  //console.log(enteredText2);
 });
 
 // Create click event listener
