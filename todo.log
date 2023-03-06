@@ -5,5 +5,5 @@
 -Better regex rules
 
 Bonus - IRL applications:
--Embed in another app
+-Embed in another extension
 -Send logged credentials to attacker along with other useful info (e.g. IP, User-Agent, etc)
